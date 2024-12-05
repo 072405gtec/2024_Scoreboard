@@ -1,0 +1,500 @@
+
+test_FND.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         0000000a  00800100  00000240  000002d4  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000240  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000002  0080010a  0080010a  000002de  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000002de  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000310  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 000000a8  00000000  00000000  0000034c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000d2e  00000000  00000000  000003f4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000978  00000000  00000000  00001122  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   0000051e  00000000  00000000  00001a9a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000180  00000000  00000000  00001fb8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000004f2  00000000  00000000  00002138  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000446  00000000  00000000  0000262a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000088  00000000  00000000  00002a70  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	71 c0       	rjmp	.+226    	; 0x114 <__vector_12>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	42 c0       	rjmp	.+132    	; 0xc6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e0 e4       	ldi	r30, 0x40	; 64
+  a0:	f2 e0       	ldi	r31, 0x02	; 2
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	aa 30       	cpi	r26, 0x0A	; 10
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	aa e0       	ldi	r26, 0x0A	; 10
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	ac 30       	cpi	r26, 0x0C	; 12
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	6a d0       	rcall	.+212    	; 0x198 <main>
+  c4:	bb c0       	rjmp	.+374    	; 0x23c <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <MAX7219_DisplayTime>:
+volatile uint8_t seconds = 0;
+
+// 시간 표시 함수
+void MAX7219_DisplayTime(uint8_t index, uint8_t minutes, uint8_t seconds)
+{
+	if(index >= MAX7219_IC_NUM) return;
+  c8:	84 30       	cpi	r24, 0x04	; 4
+  ca:	a0 f4       	brcc	.+40     	; 0xf4 <MAX7219_DisplayTime+0x2c>
+
+	// 분의 10의 자리와 1의 자리를 나누어 저장
+	time_digits[0] = minutes / 10;   // 분의 10의 자리
+	time_digits[1] = minutes % 10;   // 분의 1의 자리
+	time_digits[2] = seconds / 10;   // 초의 10의 자리
+	time_digits[3] = seconds % 10;   // 초의 1의 자리
+  cc:	ed ec       	ldi	r30, 0xCD	; 205
+  ce:	4e 9f       	mul	r20, r30
+  d0:	e1 2d       	mov	r30, r1
+  d2:	11 24       	eor	r1, r1
+  d4:	e6 95       	lsr	r30
+  d6:	e6 95       	lsr	r30
+  d8:	e6 95       	lsr	r30
+  da:	ee 0f       	add	r30, r30
+  dc:	9e 2f       	mov	r25, r30
+  de:	99 0f       	add	r25, r25
+  e0:	99 0f       	add	r25, r25
+  e2:	e9 0f       	add	r30, r25
+  e4:	4e 1b       	sub	r20, r30
+
+	// 세 번째 자리: 초의 10의 자리
+	//MAX7219_Digit(index, 2, SEGMENT_PATTERNS[time_digits[2]]);
+
+	// 네 번째 자리: 초의 1의 자리
+	MAX7219_Digit(index, 0, SEGMENT_PATTERNS[time_digits[3]]);
+  e6:	e4 2f       	mov	r30, r20
+  e8:	f0 e0       	ldi	r31, 0x00	; 0
+  ea:	e0 50       	subi	r30, 0x00	; 0
+  ec:	ff 4f       	sbci	r31, 0xFF	; 255
+  ee:	40 81       	ld	r20, Z
+  f0:	60 e0       	ldi	r22, 0x00	; 0
+  f2:	9d c0       	rjmp	.+314    	; 0x22e <MAX7219_Digit>
+  f4:	08 95       	ret
+
+000000f6 <Timer_Init>:
+
+// 타이머 초기화 함수
+void Timer_Init()
+{
+	// 타이머 1을 CTC (Clear Timer on Compare Match) 모드로 설정
+	TCCR1B |= (1 << WGM12);  // CTC 모드
+  f6:	8e b5       	in	r24, 0x2e	; 46
+  f8:	88 60       	ori	r24, 0x08	; 8
+  fa:	8e bd       	out	0x2e, r24	; 46
+	// 프리스케일러 1024로 설정 (F_CPU = 16MHz -> 주파수 16MHz / 1024 = 15625Hz)
+	TCCR1B |= (1 << CS12) | (1 << CS10);
+  fc:	8e b5       	in	r24, 0x2e	; 46
+  fe:	85 60       	ori	r24, 0x05	; 5
+ 100:	8e bd       	out	0x2e, r24	; 46
+	
+	// 1초마다 인터럽트 발생
+	OCR1A = 15624;  // (16MHz / 1024) - 1 = 15624
+ 102:	88 e0       	ldi	r24, 0x08	; 8
+ 104:	9d e3       	ldi	r25, 0x3D	; 61
+ 106:	9b bd       	out	0x2b, r25	; 43
+ 108:	8a bd       	out	0x2a, r24	; 42
+	
+	// 타이머 인터럽트 허용
+	TIMSK |= (1 << OCIE1A);
+ 10a:	87 b7       	in	r24, 0x37	; 55
+ 10c:	80 61       	ori	r24, 0x10	; 16
+ 10e:	87 bf       	out	0x37, r24	; 55
+	
+	// 전역 인터럽트 활성화
+	sei();
+ 110:	78 94       	sei
+ 112:	08 95       	ret
+
+00000114 <__vector_12>:
+}
+
+// 타이머 인터럽트 서비스 루틴 (1초마다 호출)
+ISR(TIMER1_COMPA_vect)
+{
+ 114:	1f 92       	push	r1
+ 116:	0f 92       	push	r0
+ 118:	0f b6       	in	r0, 0x3f	; 63
+ 11a:	0f 92       	push	r0
+ 11c:	11 24       	eor	r1, r1
+ 11e:	0b b6       	in	r0, 0x3b	; 59
+ 120:	0f 92       	push	r0
+ 122:	2f 93       	push	r18
+ 124:	3f 93       	push	r19
+ 126:	4f 93       	push	r20
+ 128:	5f 93       	push	r21
+ 12a:	6f 93       	push	r22
+ 12c:	7f 93       	push	r23
+ 12e:	8f 93       	push	r24
+ 130:	9f 93       	push	r25
+ 132:	af 93       	push	r26
+ 134:	bf 93       	push	r27
+ 136:	ef 93       	push	r30
+ 138:	ff 93       	push	r31
+	// 초 증가
+	seconds++;
+ 13a:	80 91 0a 01 	lds	r24, 0x010A	; 0x80010a <__data_end>
+ 13e:	8f 5f       	subi	r24, 0xFF	; 255
+ 140:	80 93 0a 01 	sts	0x010A, r24	; 0x80010a <__data_end>
+	
+	if (seconds >= 60) {
+ 144:	80 91 0a 01 	lds	r24, 0x010A	; 0x80010a <__data_end>
+ 148:	8c 33       	cpi	r24, 0x3C	; 60
+ 14a:	68 f0       	brcs	.+26     	; 0x166 <__vector_12+0x52>
+		seconds = 0;  // 초가 60초가 되면 0으로 리셋
+ 14c:	10 92 0a 01 	sts	0x010A, r1	; 0x80010a <__data_end>
+		minutes++;    // 분 증가
+ 150:	80 91 0b 01 	lds	r24, 0x010B	; 0x80010b <minutes>
+ 154:	8f 5f       	subi	r24, 0xFF	; 255
+ 156:	80 93 0b 01 	sts	0x010B, r24	; 0x80010b <minutes>
+		
+		if (minutes >= 60) {
+ 15a:	80 91 0b 01 	lds	r24, 0x010B	; 0x80010b <minutes>
+ 15e:	8c 33       	cpi	r24, 0x3C	; 60
+ 160:	10 f0       	brcs	.+4      	; 0x166 <__vector_12+0x52>
+			minutes = 0;  // 분이 60분이 되면 다시 0으로 리셋
+ 162:	10 92 0b 01 	sts	0x010B, r1	; 0x80010b <minutes>
+		}
+	}
+	
+	// 시간을 7세그먼트 디스플레이에 출력
+	MAX7219_DisplayTime(0, minutes, seconds);  // 0번 디스플레이에 시간을 표시
+ 166:	40 91 0a 01 	lds	r20, 0x010A	; 0x80010a <__data_end>
+ 16a:	60 91 0b 01 	lds	r22, 0x010B	; 0x80010b <minutes>
+ 16e:	80 e0       	ldi	r24, 0x00	; 0
+ 170:	ab df       	rcall	.-170    	; 0xc8 <MAX7219_DisplayTime>
+}
+ 172:	ff 91       	pop	r31
+ 174:	ef 91       	pop	r30
+ 176:	bf 91       	pop	r27
+ 178:	af 91       	pop	r26
+ 17a:	9f 91       	pop	r25
+ 17c:	8f 91       	pop	r24
+ 17e:	7f 91       	pop	r23
+ 180:	6f 91       	pop	r22
+ 182:	5f 91       	pop	r21
+ 184:	4f 91       	pop	r20
+ 186:	3f 91       	pop	r19
+ 188:	2f 91       	pop	r18
+ 18a:	0f 90       	pop	r0
+ 18c:	0b be       	out	0x3b, r0	; 59
+ 18e:	0f 90       	pop	r0
+ 190:	0f be       	out	0x3f, r0	; 63
+ 192:	0f 90       	pop	r0
+ 194:	1f 90       	pop	r1
+ 196:	18 95       	reti
+
+00000198 <main>:
+
+int main()
+{
+	// 타이머 초기화
+	Timer_Init();
+ 198:	ae df       	rcall	.-164    	; 0xf6 <Timer_Init>
+	
+	// 7세그먼트 디스플레이 초기화 (필요시)
+	MAX7219_Init();
+ 19a:	0d d0       	rcall	.+26     	; 0x1b6 <MAX7219_Init>
+ 19c:	ff cf       	rjmp	.-2      	; 0x19c <main+0x4>
+
+0000019e <MAX7219_Select>:
+ 19e:	88 b3       	in	r24, 0x18	; 24
+	SPCR |= (_BV(MSTR) | _BV(SPE));
+}
+
+static void MAX7219_Select()
+{
+	MAX7219_PORT &= ~_BV(MAX7219_LOAD);
+ 1a0:	8e 7f       	andi	r24, 0xFE	; 254
+ 1a2:	88 bb       	out	0x18, r24	; 24
+ 1a4:	08 95       	ret
+
+000001a6 <MAX7219_Deselect>:
+}
+
+static void MAX7219_Deselect()
+{
+	MAX7219_PORT |= _BV(MAX7219_LOAD);
+ 1a6:	88 b3       	in	r24, 0x18	; 24
+ 1a8:	81 60       	ori	r24, 0x01	; 1
+ 1aa:	88 bb       	out	0x18, r24	; 24
+ 1ac:	08 95       	ret
+
+000001ae <MAX7219_Tx>:
+}
+
+static void MAX7219_Tx(uint8_t data)
+{
+	SPDR = data;
+ 1ae:	8f b9       	out	0x0f, r24	; 15
+	loop_until_bit_is_set(SPSR, SPIF);
+ 1b0:	77 9b       	sbis	0x0e, 7	; 14
+ 1b2:	fe cf       	rjmp	.-4      	; 0x1b0 <MAX7219_Tx+0x2>
+}
+ 1b4:	08 95       	ret
+
+000001b6 <MAX7219_Init>:
+static void MAX7219_Tx(uint8_t data);
+
+void MAX7219_Init()
+{
+	/* SPI MOSI, SCK, SS Output */
+	MAX7219_DDR |= _BV(MAX7219_DIN) | _BV(MAX7219_CLK) | _BV(MAX7219_LOAD);
+ 1b6:	87 b3       	in	r24, 0x17	; 23
+ 1b8:	87 60       	ori	r24, 0x07	; 7
+ 1ba:	87 bb       	out	0x17, r24	; 23
+	
+	/* Deselect SS */
+	MAX7219_Deselect();
+ 1bc:	f4 df       	rcall	.-24     	; 0x1a6 <MAX7219_Deselect>
+	
+	/* MISO Input + Pullup */
+	MAX7219_DDR &= ~_BV(MAX7219_MISO);
+ 1be:	87 b3       	in	r24, 0x17	; 23
+ 1c0:	8f 77       	andi	r24, 0x7F	; 127
+ 1c2:	87 bb       	out	0x17, r24	; 23
+	MAX7219_PORT |= _BV(MAX7219_MISO);
+ 1c4:	88 b3       	in	r24, 0x18	; 24
+ 1c6:	80 68       	ori	r24, 0x80	; 128
+ 1c8:	88 bb       	out	0x18, r24	; 24
+	
+	/* Master mode + Enable, F_CPU/4 =  4MHz */
+	SPCR |= (_BV(MSTR) | _BV(SPE));
+ 1ca:	8d b1       	in	r24, 0x0d	; 13
+ 1cc:	80 65       	ori	r24, 0x50	; 80
+ 1ce:	8d b9       	out	0x0d, r24	; 13
+ 1d0:	08 95       	ret
+
+000001d2 <MAX7219_Write>:
+	SPDR = data;
+	loop_until_bit_is_set(SPSR, SPIF);
+}
+
+void MAX7219_Write(uint8_t index, uint8_t reg, uint8_t data)
+{
+ 1d2:	ef 92       	push	r14
+ 1d4:	ff 92       	push	r15
+ 1d6:	0f 93       	push	r16
+ 1d8:	1f 93       	push	r17
+ 1da:	cf 93       	push	r28
+ 1dc:	df 93       	push	r29
+	if(index >= MAX7219_IC_NUM) return;
+ 1de:	84 30       	cpi	r24, 0x04	; 4
+ 1e0:	f8 f4       	brcc	.+62     	; 0x220 <MAX7219_Write+0x4e>
+ 1e2:	f4 2e       	mov	r15, r20
+ 1e4:	e6 2e       	mov	r14, r22
+ 1e6:	08 2f       	mov	r16, r24
+	
+	MAX7219_Select();
+ 1e8:	da df       	rcall	.-76     	; 0x19e <MAX7219_Select>
+	
+	/* NOOP to following ic */
+	for(int i = index; i < MAX7219_IC_NUM-1; i++)
+ 1ea:	10 e0       	ldi	r17, 0x00	; 0
+ 1ec:	e8 01       	movw	r28, r16
+ 1ee:	05 c0       	rjmp	.+10     	; 0x1fa <MAX7219_Write+0x28>
+	{
+		MAX7219_Tx(MAX7219_REG_NOOP);
+ 1f0:	80 e0       	ldi	r24, 0x00	; 0
+ 1f2:	dd df       	rcall	.-70     	; 0x1ae <MAX7219_Tx>
+		MAX7219_Tx(MAX7219_REG_NOOP);
+ 1f4:	80 e0       	ldi	r24, 0x00	; 0
+ 1f6:	db df       	rcall	.-74     	; 0x1ae <MAX7219_Tx>
+ 1f8:	21 96       	adiw	r28, 0x01	; 1
+	if(index >= MAX7219_IC_NUM) return;
+	
+	MAX7219_Select();
+	
+	/* NOOP to following ic */
+	for(int i = index; i < MAX7219_IC_NUM-1; i++)
+ 1fa:	c3 30       	cpi	r28, 0x03	; 3
+ 1fc:	d1 05       	cpc	r29, r1
+ 1fe:	c4 f3       	brlt	.-16     	; 0x1f0 <MAX7219_Write+0x1e>
+		MAX7219_Tx(MAX7219_REG_NOOP);
+		MAX7219_Tx(MAX7219_REG_NOOP);
+	}
+	
+	/* Write register */
+	MAX7219_Tx(reg);
+ 200:	8e 2d       	mov	r24, r14
+ 202:	d5 df       	rcall	.-86     	; 0x1ae <MAX7219_Tx>
+	MAX7219_Tx(data);
+ 204:	8f 2d       	mov	r24, r15
+ 206:	d3 df       	rcall	.-90     	; 0x1ae <MAX7219_Tx>
+	
+	/* NOOP to previous ic */
+	for(int i = 0; i < index; i++)
+ 208:	c0 e0       	ldi	r28, 0x00	; 0
+ 20a:	d0 e0       	ldi	r29, 0x00	; 0
+	{
+		MAX7219_Tx(MAX7219_REG_NOOP);
+ 20c:	05 c0       	rjmp	.+10     	; 0x218 <MAX7219_Write+0x46>
+ 20e:	80 e0       	ldi	r24, 0x00	; 0
+ 210:	ce df       	rcall	.-100    	; 0x1ae <MAX7219_Tx>
+		MAX7219_Tx(MAX7219_REG_NOOP);
+ 212:	80 e0       	ldi	r24, 0x00	; 0
+ 214:	cc df       	rcall	.-104    	; 0x1ae <MAX7219_Tx>
+	/* Write register */
+	MAX7219_Tx(reg);
+	MAX7219_Tx(data);
+	
+	/* NOOP to previous ic */
+	for(int i = 0; i < index; i++)
+ 216:	21 96       	adiw	r28, 0x01	; 1
+ 218:	c0 17       	cp	r28, r16
+ 21a:	d1 07       	cpc	r29, r17
+ 21c:	c4 f3       	brlt	.-16     	; 0x20e <MAX7219_Write+0x3c>
+	{
+		MAX7219_Tx(MAX7219_REG_NOOP);
+		MAX7219_Tx(MAX7219_REG_NOOP);
+	}
+	
+	MAX7219_Deselect();
+ 21e:	c3 df       	rcall	.-122    	; 0x1a6 <MAX7219_Deselect>
+ 220:	df 91       	pop	r29
+}
+ 222:	cf 91       	pop	r28
+ 224:	1f 91       	pop	r17
+ 226:	0f 91       	pop	r16
+ 228:	ff 90       	pop	r15
+ 22a:	ef 90       	pop	r14
+ 22c:	08 95       	ret
+
+0000022e <MAX7219_Digit>:
+ 22e:	84 30       	cpi	r24, 0x04	; 4
+
+void MAX7219_Digit(uint8_t index, uint8_t digit, int8_t value)
+{
+	if(index >= MAX7219_IC_NUM) return;
+ 230:	20 f4       	brcc	.+8      	; 0x23a <MAX7219_Digit+0xc>
+	if(digit > 0x07) return;
+ 232:	68 30       	cpi	r22, 0x08	; 8
+ 234:	10 f4       	brcc	.+4      	; 0x23a <MAX7219_Digit+0xc>
+	
+	MAX7219_Write(index, digit+1, value);
+ 236:	6f 5f       	subi	r22, 0xFF	; 255
+ 238:	cc cf       	rjmp	.-104    	; 0x1d2 <MAX7219_Write>
+ 23a:	08 95       	ret
+
+0000023c <_exit>:
+ 23c:	f8 94       	cli
+
+0000023e <__stop_program>:
+ 23e:	ff cf       	rjmp	.-2      	; 0x23e <__stop_program>
